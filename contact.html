@@ -6,60 +6,78 @@
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
             <title>Courtney Seto</title>
-            <!--Courtney Seto's Portfolio: Contact-->
+            <!--Courtney Seto's Portfolio [Using Bootstrap] : Contact-->
 
             <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         </head>
 
         <body>
-
-            <!--header section: logo and menu bar-->
-            <header>
-                    <div class="container">
-                        <!--logo-->
-                        <div class="logo"><h1>Courtney Seto</h1></div>
-                        
-                        <!--menu bar-->
-                        <nav>
-                            <!--About | Portfolio | Contact-->
-                            <ul>
-                                <li><a href="index.html">About</a></li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
+            <!--header section: logo and navigation bar-->
+            <div class="container">
+                <div class="row header fixed-top">
+                    <!--appears as single column on xs devices-->
+                    <div class="col-xs col-md-3 mr-auto logo">
+                        <h1>Courtney Seto</h1>
                     </div>
-            </header>
-            
-            <!--about me-->
-            <main>
-                 <!--content title-->
-                 <div class="section-header">
-                    <h1>Contact</h1>
+                    
+                    <div class="col-xs col-md-auto align-self-end">
+                        
+                        <!--About | Portfolio | Contact-->
+                        <ul class="nav navigationbar justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
-       
-                <section class="clearfix">
-                    <!--send responses to courtneyjseto@gmail.com--> 
-                   <form action="mailto:courtneyjseto@gmail.com" method="POST" enctype="text/plain">
-                        <!--name input-->
-                        Name <br>
-                        <input type="text" name="name" value="John Smith"><br>
 
-                        <!--email input-->
-                        Email <br>
-                        <input type="text" name="email" value="example@gmail.com"><br>
+            <!--contact-->
 
-                        <!--message input-->
-                        Message <br>
-                        <input type="text" name="message"><br>
 
-                        <!--submit button-->
-                        <input type="submit" value="Submit">
-                    </form>
-                </section>
-            </main>
+            <div class="row main d-inline-block">
+                    <div class="row">
+                        <div class="col section-header">
+                            <h1>Contact</h1>
+                        </div>
+                    </div>
+
+                    <div class="row section-content">
+                        <div class="col-md-12">
+                            <!--send responses to courtneyjseto@gmail.com--> 
+                            <form action="mailto:courtneyjseto@gmail.com" method="POST" enctype="text/plain">
+                                <!--name input-->
+                                Name <br>
+                                <input type="text" name="name" value="John Smith"><br>
+
+                                <!--email input-->
+                                Email <br>
+                                <input type="text" name="email" value="example@gmail.com"><br>
+
+                                <!--message input-->
+                                Message <br>
+                                <input type="text" name="message"><br>
+
+                                <!--submit button-->
+                                <input type="submit" value="Submit">
+                            </form>                                
+                        </div>
+                    </div>
+                </div>
+            </div>   
 
             <!--footer-->
-            <div class="footer"></div>
+            <div class="row footer fixed-bottom"></div>
         </body>
     </html>
