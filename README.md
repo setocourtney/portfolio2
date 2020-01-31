@@ -1,7 +1,6 @@
-# setocourtney.github.io/portfolio2
-
 ## Reactive Portfolio for Courtney Seto
 
+# setocourtney.github.io/portfolio2
 
 ## Description
 
